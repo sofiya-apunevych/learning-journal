@@ -1,0 +1,217 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ * {
+  box-sizing: border-box;
+}
+
+.header,
+.main,
+.section{
+    width: 414px;
+     margin: 0 auto;
+     
+}
+
+.section{
+    margin-bottom: 3.5rem;
+}
+
+
+.header{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.125em 1.25em;
+}
+
+.img-head{
+    width: 20%;
+    align-self: baseline;
+    padding: 0.6em 0.1em 0.1em;
+}
+
+.head-one,
+.head-two{
+    margin:0;
+    display: flex;
+}
+
+.head-one{
+    width: 60%;
+    padding-right: 3.125em;
+    font-weight: 700;
+}
+.head-two{
+     font-family: 'Source Sans Pro', sans-serif;
+     width: 40%;
+     justify-content: space-between;
+     font-weight: 600;
+     font-size: 0.75;
+}
+
+
+
+.home,
+.aboutme{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.main{
+     margin:0 auto; 
+}
+
+.main-article{
+    margin:0;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #151515;
+    position: relative;
+}
+
+
+.image-window{
+    width: 90%;
+    margin:2rem auto ;
+    position: absolute;
+    //max-width: 414px;
+    transform: scaleX(-1);
+    top: 35px; left: 20px;
+    object-fit: cover;
+    clip-path: inset(45% 0 20% 0);
+    //z-index:-1;
+}
+
+
+
+.avatar{
+    width: 45%;
+    border-radius: 50%;
+}
+
+
+.text-main h1{
+    font-size:2rem;
+}
+
+
+.text-main{
+    margin: 0 auto;
+    width: 90%;
+    padding: 0.2rem 0 0.2rem;
+    
+}
+
+.abstract{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height:1.25rem; 
+}
+
+
+.mainart{
+    width: 90%;
+    margin: 0.1rem auto;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height:1.25rem;
+}
+
+
+.paragraph{
+    width: 90%;
+    margin:2rem auto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height:1.25rem; 
+}
+
+.body-main{ 
+    margin-top: 2rem;  
+}
+
+
+
+//Articles
+
+.para{
+ 
+ 
+    display: flex;
+    text-align: center;
+   
+    
+}
+
+.img-art{
+     width: 100%;
+padding: 2em 1em;
+
+}
+
+
+.data{
+  
+    font-size:0.875rem;
+    font-weight: 400;
+    line-height:1.125rem;
+      padding: 0.1em 1em;
+  
+}
+
+.blog{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height:1.625rem;
+    padding: 0.1em 0.6em;
+}
+
+.text{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height:1.25rem;
+    padding: 0.1em 1em;
+}
+
+.recentposts{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 3.2rem;
+    text-align: center;
+}
+
+
+.footer{
+    text-align: center;
+    background: #202020;
+    padding:2.3rem;
+   
+}
+
+
+.footerMLJ{
+    font-size:0.75rem;
+    font-weight: 700;
+    line-height:0.8rem;
+    color:#ECECEC;
+}
+
+.footerCopy{
+     line-height:0.94rem;
+     font-size:0.75rem;
+     font-weight: 400;
+     color:#D7D7D7;
+}
+
+
+
+div.para.hidden{
+     visibility: hidden;
+}

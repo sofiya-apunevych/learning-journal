@@ -13,8 +13,15 @@ body {
 .main,
 .section{
     width: 414px;
-     margin: 0 auto;
+    margin: 0 auto;
      
+}
+
+
+
+.section{
+    position: relative;
+    margin-bottom: 3.5rem;
 }
 
 
@@ -51,8 +58,108 @@ body {
      font-size: 0.75;
 }
 
+.home,
+.aboutme{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* 
+ .hidden{
+     display: none;
+}
+
+.viewmore{
+    text-decoration:underline;
+}
+
+.viewmore:hover~.hidden,
+.viewmore:focus~.hidden{
+   display: block; 
+}
+ */
+
+
+[type="checkbox"] {
+  position: absolute;
+  left:  -9999px; 
+}
+
+label {
+   display: block;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+  /*
+   * no need to position absolutely the element 
+   * because we are not interested in any transition effect
+   * position: absolute;
+   * top: 0;
+   */
+}
+
+/*
+ * use the rule below for testing purposes
+ * label:hover {
+ *    background: yellow;
+ *  }
+ */
+
+label:before,
+label:after {
+  position: absolute;
+}
+
+label:before {
+  content: 'View More';
+  top: 1.7rem;
+  left: 9rem;
+  text-decoration:underline;
+  font-size: 1.3rem;
+  font-weight: bold;
+ 
+}
+
+
+
+input[type="checkbox"] ~ div {
+  width: 100%;
+  display: none;
+}
+
+[type="checkbox"]:checked ~ div {
+  display: block;
+} 
+
+[type="checkbox"]:checked + label {
+  /**
+   * if we have positioned relatively the element, 
+   * during the "checked" state 
+   * we have to change its type of positioning
+   */
+  position: absolute; 
+  top: 100%;
+}
+
+[type="checkbox"]:checked + label:before {
+  content: 'View Less';
+}
+
+
+
+
+
+///////
+
+
+
+
+
+
 .main{
-     margin:0 auto; 
+     margin: 0 auto; 
 }
 
 .main-article{
@@ -60,10 +167,15 @@ body {
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     color: #FFFFFF;
-   
-     
-     height: 293px;
-     position: relative;
+    height: 293px;
+    position: relative;
+}
+
+
+
+.mainarticleh1 a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .image-window{
@@ -78,8 +190,10 @@ body {
     z-index:-1;
 }
 
-.text-main p{
+ .mainp {
     font-size:0.75rem;
+    text-decoration-line:none;
+    color: white; 
 }
 
 .text-main h1{
@@ -89,6 +203,7 @@ body {
 .text-main .paragraph{
    font-size:1rem; 
 }
+
 .text-main{
     margin: 0 auto;
     width: 90%;
@@ -99,17 +214,13 @@ body {
 //Articles
 
 .para{
- 
-   margin: 50px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
+    text-align: center;
+   }
 
 .img-art{
-   
-    margin: 0 auto;
+     width: 100%;
+     padding: 2em 1em;
 }
 
 
@@ -117,17 +228,59 @@ body {
     font-size:0.875rem;
     font-weight: 400;
     line-height:1.125rem;
-  
+    padding: 0.1em 1em; 
 }
 
 .blog{
     font-size: 1.5rem;
     font-weight: 700;
     line-height:1.625rem;
+    padding: 0.1em 0.6em;
 }
 
 .text{
     font-size: 1rem;
     font-weight: 400;
     line-height:1.25rem;
+    padding: 0.1em 1em;
 }
+
+
+.footer{
+    text-align: center;
+    background: #202020;
+    padding:2.3rem;
+   
+}
+
+
+.footerMLJ{
+    font-size:0.75rem;
+    font-weight: 700;
+    line-height:0.8rem;
+    color:#ECECEC;
+}
+
+.footerCopy{
+     line-height:0.94rem;
+     font-size:0.75rem;
+     font-weight: 400;
+     color:#D7D7D7;
+}
+
+@media (min-width: 480px){
+     
+        
+     
+.header,
+.main,
+.section{
+    width: 1085px;
+    margin: 0 auto;
+     
+}   
+        
+        
+        
+}
+
